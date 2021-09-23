@@ -197,7 +197,6 @@ def word_handle(keyword_list):
             first_letter_list = lazy_pinyin(keyword, 4)
             # 判断是否中文避免数组越界（
             dfs(keyword, after_list, pinyin_list, first_letter_list, "", 0, len(keyword))
-    print(after_list)
     return after_list
 
 
